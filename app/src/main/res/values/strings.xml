@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">QuizAppForInterview</string>
+    <string name="landing_text">match the cover of the book with its first line</string>
+    <string name="play_text_btn">Play</string>
 </resources>
