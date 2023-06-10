@@ -1,5 +1,6 @@
 package com.landfathich.quizappforinterview
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.media.Image
@@ -22,6 +23,9 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
     private var mQuestionsList: ArrayList<Question>? = null
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
+
+    var resultQuestions: BooleanArray = BooleanArray(10)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding =
@@ -37,6 +41,10 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
             option2.setOnClickListener(this@QuizQuestionsActivity)
             option3.setOnClickListener(this@QuizQuestionsActivity)
             btnNext.setOnClickListener(this@QuizQuestionsActivity)
+        }
+
+        for (i in 0..9) {
+            resultQuestions[i] = false
         }
     }
 
@@ -91,19 +99,21 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
                         }
 
                         else -> {
-                            Toast.makeText(
-                                this,
-                                "You have successfully completed the Quiz",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                            val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra(Constants.RESULT, resultQuestions)
+                            intent.putExtra(Constants.RIGHT_ANSWERS, mCorrectAnswers)
+                            startActivity(intent)
+                            finish()
                         }
                     }
                 } else {
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
                     if (question!!.correctImage != mSelectedOptionPosition) {
                         answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
+                        resultQuestions[mCurrentPosition - 1] = false
                     } else {
                         mCorrectAnswers++
+                        resultQuestions[mCurrentPosition - 1] = true
                     }
                     answerView(question.correctImage, R.drawable.correct_option_border_bg)
 
@@ -115,13 +125,9 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
 
     private fun answerView(answer: Int, drawableView: Int) {
         when (answer) {
-            1 -> {
-                binding.option1.background = ContextCompat.getDrawable(this, drawableView)
-            }
+            1 -> binding.option1.background = ContextCompat.getDrawable(this, drawableView)
 
-            2 -> {
-                binding.option2.background = ContextCompat.getDrawable(this, drawableView)
-            }
+            2 -> binding.option2.background = ContextCompat.getDrawable(this, drawableView)
 
             3 -> binding.option3.background = ContextCompat.getDrawable(this, drawableView)
         }

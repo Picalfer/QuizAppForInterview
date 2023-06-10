@@ -14,13 +14,14 @@
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:text="@string/result_text"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
@@ -45,14 +46,214 @@
                     android:textStyle="italic"
                     android:fontFamily="@font/oswald"
                     android:layout_height="wrap_content"
-                    android:text="Question 1" />
+                    android:text="Question 1 " />
 
                 <ImageView
-                    android:id="@+id/result_question_iv"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/result_question_iv1"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
                     android:layout_height="wrap_content"
-                    tools:src="@drawable/correct" />
+                    android:src="@drawable/correct" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 2 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv2"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 3 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv3"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 4 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv4"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 5 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv5"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 6 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv6"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 7 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv7"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 8 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv8"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 9 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv9"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/oswald"
+                    android:layout_height="wrap_content"
+                    android:text="Question 10 " />
+
+                <ImageView
+                    android:id="@+id/result_question_iv10"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct" />
+            </LinearLayout>
+
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -70,16 +271,6 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        tools:text="Username" />
-
-    <TextView
         android:id="@+id/tv_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,7 +278,7 @@
         android:textColor="#D1CFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:text="Your score is 9 out of 10" />
+        tools:text="Your score is 10 out of 10" />
 
     <Button
         android:id="@+id/btn_submit"

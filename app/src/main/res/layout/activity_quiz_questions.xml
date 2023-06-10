@@ -64,24 +64,24 @@
             android:id="@+id/option1"
             android:layout_width="120dp"
             android:layout_height="200dp"
-            android:paddingHorizontal="10dp"
             android:layout_weight="10"
+            android:paddingHorizontal="10dp"
             tools:src="@drawable/portre_doriana" />
 
         <ImageView
             android:id="@+id/option2"
             android:layout_width="120dp"
             android:layout_height="200dp"
-            android:paddingHorizontal="10dp"
             android:layout_weight="10"
+            android:paddingHorizontal="10dp"
             tools:src="@drawable/maktub" />
 
         <ImageView
             android:id="@+id/option3"
             android:layout_width="120dp"
             android:layout_height="200dp"
-            android:paddingHorizontal="10dp"
             android:layout_weight="10"
+            android:paddingHorizontal="10dp"
             tools:src="@drawable/prejde_chem" />
     </LinearLayout>
 

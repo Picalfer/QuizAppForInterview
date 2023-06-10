@@ -2,6 +2,9 @@ package com.landfathich.quizappforinterview
 
 object Constants {
 
+    const val RESULT: String = "result"
+    const val RIGHT_ANSWERS: String = "right_answers"
+
     fun getQuestions(): ArrayList<Question> {
         val questionList = ArrayList<Question>()
 
