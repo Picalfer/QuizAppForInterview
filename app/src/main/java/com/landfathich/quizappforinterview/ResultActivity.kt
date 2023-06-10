@@ -3,6 +3,7 @@ package com.landfathich.quizappforinterview
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import com.landfathich.quizappforinterview.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
@@ -27,41 +28,26 @@ class ResultActivity : AppCompatActivity() {
     }
 
     private fun retrieveResult() {
-        binding.apply {
-            if (resultQuestions?.get(0) == false) {
-                resultQuestionIv1.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(1) == false) {
-                resultQuestionIv2.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(2) == false) {
-                resultQuestionIv3.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(3) == false) {
-                resultQuestionIv4.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(4) == false) {
-                resultQuestionIv5.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(5) == false) {
-                resultQuestionIv6.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(6) == false) {
-                resultQuestionIv7.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(7) == false) {
-                resultQuestionIv8.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(8) == false) {
-                resultQuestionIv9.setImageResource(R.drawable.wrong)
-            }
-            if (resultQuestions?.get(9) == false) {
-                resultQuestionIv10.setImageResource(R.drawable.wrong)
+            val resViews = ArrayList<ImageView>()
+            resViews.add(binding.resultQuestionIv1)
+            resViews.add(binding.resultQuestionIv2)
+            resViews.add(binding.resultQuestionIv3)
+            resViews.add(binding.resultQuestionIv4)
+            resViews.add(binding.resultQuestionIv5)
+            resViews.add(binding.resultQuestionIv6)
+            resViews.add(binding.resultQuestionIv7)
+            resViews.add(binding.resultQuestionIv8)
+            resViews.add(binding.resultQuestionIv9)
+            resViews.add(binding.resultQuestionIv10)
+
+            for (i in resultQuestions!!.indices) {
+                when (resultQuestions!![i]) {
+                    false -> resViews[i].setImageResource(R.drawable.wrong)
+                    else -> true
+                }
             }
 
-
-            tvScore.text = "Your score is $correctAnswers out of 10"
-        }
+            binding.tvScore.text = "Your score is $correctAnswers out of 10"
 
     }
 }
