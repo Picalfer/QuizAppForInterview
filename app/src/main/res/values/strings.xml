@@ -2,4 +2,6 @@
     <string name="app_name">QuizAppForInterview</string>
     <string name="landing_text">match the cover of the book with its first line</string>
     <string name="play_text_btn">Play</string>
+    <string name="default_question_text">Can you match the book cover to the book`s quote?</string>
+    <string name="btn_next_desc">To the next question</string>
 </resources>
